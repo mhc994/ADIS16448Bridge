@@ -64,7 +64,8 @@ void Error_Handler(void);
 #define SENSORS_3V3_EN_GPIO_Port GPIOC
 #define ADIS_DRDY_Pin GPIO_PIN_15
 #define ADIS_DRDY_GPIO_Port GPIOD
-#define ADIS_CS_Pin GPIO_PIN_6
+#define ADIS_DRDY_EXTI_IRQn EXTI15_10_IRQn
+#define ADIS_CS_Pin GPIO_PIN_7
 #define ADIS_CS_GPIO_Port GPIOD
 /* USER CODE BEGIN Private defines */
 

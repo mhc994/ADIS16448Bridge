@@ -65,11 +65,11 @@
 
 #define USBD_VID     2333
 #define USBD_LANGID_STRING     1033
-#define USBD_MANUFACTURER_STRING     "WangFugui"
-#define USBD_PID_FS     23333
-#define USBD_PRODUCT_STRING_FS     "ADIS16488Bridge"
-#define USBD_CONFIGURATION_STRING_FS     "Custom HID Config"
-#define USBD_INTERFACE_STRING_FS     "Custom HID Interface"
+#define USBD_MANUFACTURER_STRING     "wangfugui"
+#define USBD_PID_FS     2333
+#define USBD_PRODUCT_STRING_FS     "adis16448bridge"
+#define USBD_CONFIGURATION_STRING_FS     "CDC Config"
+#define USBD_INTERFACE_STRING_FS     "CDC Interface"
 
 #define USB_SIZ_BOS_DESC            0x0C
 
@@ -171,8 +171,8 @@ __ALIGN_BEGIN uint8_t USBD_FS_DeviceDesc[USB_LEN_DEV_DESC] __ALIGN_END =
   0x00,                       /*bcdUSB */
 #endif /* (USBD_LPM_ENABLED == 1) */
   0x02,
-  0x00,                       /*bDeviceClass*/
-  0x00,                       /*bDeviceSubClass*/
+  0x02,                       /*bDeviceClass*/
+  0x02,                       /*bDeviceSubClass*/
   0x00,                       /*bDeviceProtocol*/
   USB_MAX_EP0_SIZE,           /*bMaxPacketSize*/
   LOBYTE(USBD_VID),           /*idVendor*/
