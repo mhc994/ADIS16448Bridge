@@ -1,0 +1,3 @@
+# For WZ's adis16448 adapter
+# place it in /etc/udev/rules.d
+KERNEL=="ttyACM*", ATTRS{idVendor}=="2333", ATTRS{idProduct}=="6666", MODE:="0666", SYMLINK+="adis16448"
