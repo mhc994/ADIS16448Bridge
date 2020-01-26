@@ -1,4 +1,4 @@
-ADIS16448 IMU bridge using USB-CDC with STM32F765VI on EHFCU
+ADIS16448 IMU bridge using USB-CDC with STM32F103C8
 
 ## Hardware
 ADIS16488 IMU
